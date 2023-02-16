@@ -1,0 +1,35 @@
+﻿@page
+@model Kardelen_DBase.Pages.Bill.IndexModel
+@{
+}
+
+<br />
+<h2>Bills</h2>
+<a class="btn btn-primary btn-sm" href="/Bill/AddBill">Add Bill</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Bill ID</th>
+            <th>Payment Type</th>
+            <th>Instalment Months</th>
+            <th>Transaction Amount</th>
+            <th>KDV</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var bill in Model.billInfos)
+        {
+            <tr>
+                <td>@bill.b_id</td>
+                <td>@bill.payment</td>
+                <td>@bill.instalment</td>
+                <td>@bill.amount</td>
+                <td>@bill.kdv</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Bill/Edit?b_id=@bill.b_id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Bill/Delete?b_id=@bill.b_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

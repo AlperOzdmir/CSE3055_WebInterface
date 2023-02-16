@@ -1,0 +1,60 @@
+﻿@page
+@model Kardelen_DBase.Pages.Product.SellProductModel
+@{
+}
+
+<br />
+<h2>Sell Product</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" date-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Product ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="p_id" id="p_id" asp-items="Model.productOptions" value="@Model.product.p_id">
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Customer ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="c_id" id="c_id" asp-items="Model.customerOptions">
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Transaction ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="t_id" id="t_id" asp-items="Model.transactionOptions" value="@Model.product.t_id">
+            </select>
+        </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Product/Index" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

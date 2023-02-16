@@ -1,0 +1,22 @@
+﻿@page
+@model Kardelen_DBase.Pages.Statistics.TheMoneySpentOnMaterialsThisMonth
+@{
+}
+
+<br />
+<h2>The Money Spent On Materials This Month</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>The Money Spent On Materials This Month</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listSpentMoneyInfo)
+        {
+            <tr>
+                <td>@item.spentMoney</td>
+            </tr>
+        }
+    </tbody>
+</table>

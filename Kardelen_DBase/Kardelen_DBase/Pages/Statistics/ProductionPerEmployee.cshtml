@@ -1,0 +1,26 @@
+﻿@page
+@model Kardelen_DBase.Pages.Statistics.ProductionPerEmployee
+@{
+}
+
+<br />
+<h2>Production Per Employee</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Produced Products This Month</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listProductionInfo)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.fullName</td>
+                <td>@item.productCount</td>
+            </tr>
+        }
+    </tbody>
+</table>

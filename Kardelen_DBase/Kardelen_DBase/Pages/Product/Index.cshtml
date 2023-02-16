@@ -1,0 +1,41 @@
+﻿@page
+@model Kardelen_DBase.Pages.Product.IndexModel
+@{
+}
+
+<br />
+<h2>Products in Stock</h2>
+<a class="btn btn-primary btn-sm" href="/Product/AddProduct">Add New Product Type</a>
+<a class="btn btn-primary btn-sm" href="/Product/ProduceProduct">Produce Product</a>
+<a class="btn btn-primary btn-sm" href="/Product/SellProduct">Sell Product</a>
+<a class="btn btn-primary btn-sm" href="/Product/ProductFormula">Switch to Material View</a>
+<a class="btn btn-primary btn-sm" href="/Product/ProductEmployee">Switch to Employee View</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Last Transaction ID</th>
+            <th>Product Name</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th>Installing Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var product in Model.productInfos)
+        {
+            <tr>
+                <td>@product.p_id</td>
+                <td>@product.t_id</td>
+                <td>@product.p_name</td>
+                <td>@product.p_quantity</td>
+                <td>@product.p_price</td>
+                <td>@product.p_installingPrice</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Product/Edit?p_id=@product.p_id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Product/Delete?p_id=@product.p_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

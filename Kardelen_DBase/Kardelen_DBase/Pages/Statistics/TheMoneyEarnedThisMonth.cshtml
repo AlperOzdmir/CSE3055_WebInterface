@@ -1,0 +1,22 @@
+﻿@page
+@model Kardelen_DBase.Pages.Statistics.TheMoneyEarnedThisMonth
+@{
+}
+
+<br />
+<h2>The Money Earned This Month</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>The Money Earned This Month</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listEarnedMoneyInfo)
+        {
+            <tr>
+                <td>@item.earnedMoney</td>
+            </tr>
+        }
+    </tbody>
+</table>

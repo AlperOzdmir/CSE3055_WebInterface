@@ -1,0 +1,59 @@
+﻿@page
+@model Kardelen_DBase.Pages.Transaction.AddTransactionModel
+@{
+}
+
+<br />
+<h2>Add Transaction</h2>
+
+@if(Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" date-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Customer ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="c_id" id="c_id" asp-items="Model.customerOptions" value="@Model.transaction.c_id"></select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Bill ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="b_id" id="b_id" asp-items="Model.billOptions" value="@Model.transaction.b_id"></select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Transaction Type</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="type" id="type" value="@Model.transaction.type">
+                <option value="buy">buy</option>
+                <option value="sell">sell</option>
+            </select>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Transaction/Index" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,58 @@
+﻿@page
+@model Kardelen_DBase.Pages.Product.EditEmployeeModel
+@{
+}
+
+<br />
+<h2>Edit Item Data</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" date-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+
+<form method="POST">
+    <input type="hidden" name="pi_id" id="pi_id" value="@Model.pproduct.pi_id" />
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Employee ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="e_id" id="e_id" asp-items="Model.employeeOptions" value="@Model.pproduct.e_id"></select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Product ID</label>
+        <div class="col-sm-6">
+<select class="form-control" name="p_id" id="p_id" asp-items="Model.productOptions" value="@Model.pproduct.p_id"></select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Production Date</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="p_date" id="p_date" value="@Model.pproduct.p_date">
+        </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Product/ProductEmployee" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

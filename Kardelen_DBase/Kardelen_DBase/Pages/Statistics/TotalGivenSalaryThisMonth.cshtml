@@ -1,0 +1,24 @@
+﻿@page
+@model Kardelen_DBase.Pages.Statistics.TotalGivenSalaryThisMonth
+@{
+}
+
+<br />
+<h2>Total Given Salary This Month</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Total Given Salary This Month</th>
+            <th>Employee Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listSalaryInfo)
+        {
+            <tr>
+                <td>@item.totalSalary</td>
+                <td>@item.employeeCount</td>
+            </tr>
+        }
+    </tbody>
+</table>

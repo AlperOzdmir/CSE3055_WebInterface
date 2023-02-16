@@ -1,0 +1,35 @@
+﻿@page
+@model Kardelen_DBase.Pages.Transaction.IndexModel
+@{
+}
+
+<br />
+<h2>Transactions</h2>
+<a class="btn btn-primary btn-sm" href="/Transaction/AddTransaction">Add Transaction</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Transaction ID</th>
+            <th>Customer ID</th>
+            <th>Bill ID</th>
+            <th>Transaction Type</th>
+            <th>Transaction Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var transaction in Model.transactionInfos)
+        {
+            <tr>
+                <td>@transaction.t_id</td>
+                <td>@transaction.c_id</td>
+                <td>@transaction.b_id</td>
+                <td>@transaction.type</td>
+                <td>@transaction.date</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Transaction/Edit?t_id=@transaction.t_id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Transaction/Delete?t_id=@transaction.t_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

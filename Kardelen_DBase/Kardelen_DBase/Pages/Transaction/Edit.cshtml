@@ -1,0 +1,64 @@
+﻿@page
+@model Kardelen_DBase.Pages.Transaction.EditModel
+@{
+}
+
+<br />
+<h2>Edit Transaction Data</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" date-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+
+<form method="POST">
+    <input type="hidden" name="t_id" id="t_id" value="@Model.transaction.t_id" />
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Customer ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="c_id" id="c_id" asp-items="Model.customerOptions" value="@Model.transaction.c_id"></select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Bill ID</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="b_id" id="b_id" value="@Model.transaction.b_id">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Transaction Type</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="type" id="type" value="@Model.transaction.type">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Transaction Date</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="date" id="date" value="@Model.transaction.date">
+        </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Transaction/Index" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

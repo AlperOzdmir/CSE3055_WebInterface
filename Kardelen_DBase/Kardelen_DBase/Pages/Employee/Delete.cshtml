@@ -1,0 +1,24 @@
+﻿@page
+@using System.Data.SqlClient;
+@{
+    Connection conn = new Connection();
+    String id = Request.Query["e_id"];
+    try
+    {
+        using (SqlConnection connection = new SqlConnection(conn.connString))
+        {
+            connection.Open();
+            String sql = "EXEC spa_FireEmployee @e_id";
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@e_id", id);
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        return;
+    }
+    Response.Redirect("/Employee/Index");
+}

@@ -1,0 +1,26 @@
+﻿@page
+@model Kardelen_DBase.Pages.Log.IndexModel
+@{
+}
+
+<br />
+<h2>Log</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Operation</th>
+            <th>Related ID</th>
+            <th>Operation Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var log in Model.logInfos)
+        {
+            <tr>
+                <td>@log.op</td>
+                <td>@log.r_id</td>
+                <td>@log.op_date</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kardelen_DBase", "Kardelen_DBase\Kardelen_DBase.csproj", "{618FA03F-762E-49B8-AAE6-B712E416A0DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{618FA03F-762E-49B8-AAE6-B712E416A0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618FA03F-762E-49B8-AAE6-B712E416A0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618FA03F-762E-49B8-AAE6-B712E416A0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618FA03F-762E-49B8-AAE6-B712E416A0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16C45467-FC6C-43AC-B9D4-2B4841BB923B}
+	EndGlobalSection
+EndGlobal

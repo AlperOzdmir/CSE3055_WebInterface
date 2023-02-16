@@ -1,0 +1,24 @@
+﻿@page
+@using System.Data.SqlClient;
+@{
+    String id = Request.Query["t_id"];
+    try
+    {
+        Connection conn = new Connection();
+        using (SqlConnection connection = new SqlConnection(conn.connString))
+        {
+            connection.Open();
+            String sql = "DELETE FROM Work_Flow WHERE transactionID = @t_id";
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@t_id", id);
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        return;
+    }
+    Response.Redirect("/Transaction/Index");
+}

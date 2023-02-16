@@ -1,0 +1,73 @@
+﻿@page
+@model Kardelen_DBase.Pages.Material.AddMaterialModel
+@{
+}
+
+<br />
+<h2>Add Material</h2>
+
+@if(Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" date-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Transaction ID</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="t_id" id="t_id" asp-items="Model.transactionOptions" value="@Model.material.t_id">
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Material Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="m_name" id="m_name" value="@Model.material.m_name">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Matter State</label>
+        <div class="col-sm-6">
+            <select class="form-control" name="m_state" id="m_state" value="@Model.material.m_state">
+                <option value="solid">solid</option>
+                <option value="liquid">liquid</option>
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Quantity</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="m_quantity" id="m_quantity" value="@Model.material.m_quantity">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Critical Quantity</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="m_criticalQuantity" id="m_criticalQuantity" value="@Model.material.m_criticalQuantity">
+        </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Material/Index" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

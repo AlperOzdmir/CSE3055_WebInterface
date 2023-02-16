@@ -1,0 +1,197 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Kardelen_DBase
+build_property.RootNamespace = Kardelen_DBase
+build_property.ProjectDir = C:\Users\Tegralyn\source\repos\Kardelen_DBase\Kardelen_DBase\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Tegralyn\source\repos\Kardelen_DBase\Kardelen_DBase
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Bill/AddBill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlsbFxBZGRCaWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Bill/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlsbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Bill/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlsbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Bill/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlsbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Customer/AddCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcQWRkQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Employee/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcQWRkRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Employee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Log/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Material/AddMaterial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxcQWRkTWF0ZXJpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Material/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Material/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Material/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/AddFormula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxBZGRGb3JtdWxhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/DeleteEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxEZWxldGVFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/DeleteFormula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxEZWxldGVGb3JtdWxhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/EditEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxFZGl0RW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/EditFormula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxFZGl0Rm9ybXVsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/ProduceProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWNlUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/ProductEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0RW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/ProductFormula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0Rm9ybXVsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Product/SellProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxTZWxsUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Statistics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGlzdGljc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Statistics/ProductionPerEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGlzdGljc1xQcm9kdWN0aW9uUGVyRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Statistics/TheMoneyEarnedThisMonth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGlzdGljc1xUaGVNb25leUVhcm5lZFRoaXNNb250aC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Statistics/TheMoneySpentOnMaterialsThisMonth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGlzdGljc1xUaGVNb25leVNwZW50T25NYXRlcmlhbHNUaGlzTW9udGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Statistics/TotalGivenSalaryThisMonth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGlzdGljc1xUb3RhbEdpdmVuU2FsYXJ5VGhpc01vbnRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Transaction/AddTransaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNhY3Rpb25cQWRkVHJhbnNhY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Transaction/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNhY3Rpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Transaction/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNhY3Rpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Transaction/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tegralyn/source/repos/Kardelen_DBase/Kardelen_DBase/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2c36oji5xn

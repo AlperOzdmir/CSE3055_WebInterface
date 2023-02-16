@@ -1,0 +1,37 @@
+﻿@page
+@model Kardelen_DBase.Pages.Customer.IndexModel
+@{
+}
+
+<br />
+<h2>Materials in Stock</h2>
+<a class="btn btn-primary btn-sm" href="/Customer/AddCustomer">Add Customer</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Reference</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Contact</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var customer in Model.customerInfos)
+        {
+            <tr>
+                <td>@customer.c_id</td>
+                <td>@customer.hasReference</td>
+                <td>@customer.firstName</td>
+                <td>@customer.lastName</td>
+                <td>@customer.contactNumber</td>
+                <td>@customer.address</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Customer/Edit?c_id=@customer.c_id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Customer/Delete?c_id=@customer.c_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,25 @@
+﻿@page
+@using System.Data.SqlClient;
+@using Kardelen_DBase;
+@{
+    Connection conn = new Connection();
+    String id = Request.Query["b_id"];
+    try
+    {
+        using (SqlConnection connection = new SqlConnection(conn.connString))
+        {
+            connection.Open();
+            String sql = "DELETE FROM Bill WHERE billID = @b_id";
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@b_id", id);
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        return;
+    }
+    Response.Redirect("/Bill/Index");
+}

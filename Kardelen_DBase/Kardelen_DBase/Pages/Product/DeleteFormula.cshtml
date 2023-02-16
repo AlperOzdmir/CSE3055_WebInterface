@@ -1,0 +1,27 @@
+﻿@page
+@using System.Data.SqlClient;
+@{
+    String p_id = Request.Query["p_id"];
+    String m_id = Request.Query["m_id"];
+    try
+    {
+        Connection conn = new Connection();
+        using (SqlConnection connection = new SqlConnection(conn.connString))
+        {
+            connection.Open();
+            String sql = "DELETE FROM Product_Formula WHERE productID = @p_id AND materialID = @m_id";
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@p_id", p_id);
+                command.Parameters.AddWithValue("@m_id", m_id);
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        return;
+    }
+    Response.Redirect("/Product/ProductFormula");
+}
+

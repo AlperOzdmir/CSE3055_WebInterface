@@ -1,0 +1,37 @@
+﻿@page
+@model Kardelen_DBase.Pages.Material.IndexModel
+@{
+}
+
+<br />
+<h2>Materials in Stock</h2>
+<a class="btn btn-primary btn-sm" href="/Material/AddMaterial">Add Material</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Material ID</th>
+            <th>Last Transaction ID</th>
+            <th>Material Name</th>
+            <th>Matter State</th>
+            <th>Stock</th>
+            <th>Critical Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var material in Model.materialInfos)
+        {
+            <tr>
+                <td>@material.m_id</td>
+                <td>@material.t_id</td>
+                <td>@material.m_name</td>
+                <td>@material.m_state</td>
+                <td>@material.m_quantity</td>
+                <td>@material.m_criticalQuantity</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Material/Edit?m_id=@material.m_id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Material/Delete?m_id=@material.m_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

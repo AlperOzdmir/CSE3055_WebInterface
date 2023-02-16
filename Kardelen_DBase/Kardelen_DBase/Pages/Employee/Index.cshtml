@@ -1,0 +1,43 @@
+﻿@page
+@model Kardelen_DBase.Pages.Employee.IndexModel
+@{
+}
+
+<br />
+<h2>Employees</h2>
+<a class="btn btn-primary btn-sm" href="/Employee/AddEmployee">Hire Employee</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Reference</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Marital Status</th>
+            <th>Experience</th>
+            <th>Start Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var employee in Model.employeeInfos)
+        {
+            <tr>
+                <td>@employee.e_id</td>
+                <td>@employee.hasReference</td>
+                <td>@employee.firstName</td>
+                <td>@employee.lastName</td>
+                <td>@employee.age</td>
+                <td>@employee.salary</td>
+                <td>@employee.maritalStatus</td>
+                <td>@employee.experience</td>
+                <td>@employee.startDate</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Employee/Edit?e_id=@employee.e_id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Employee/Delete?e_id=@employee.e_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

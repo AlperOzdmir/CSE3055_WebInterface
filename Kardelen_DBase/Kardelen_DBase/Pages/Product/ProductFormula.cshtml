@@ -1,0 +1,33 @@
+﻿@page
+@model Kardelen_DBase.Pages.Product.ProductFormulaModel
+@{
+}
+
+<br />
+<h2>Required Materials</h2>
+<a class="btn btn-primary btn-sm" href="/Product/AddFormula">Add New Formula</a>
+<a class="btn btn-primary btn-sm" href="/Product/Index">Switch to Original View</a>
+<a class="btn btn-primary btn-sm" href="/Product/ProductEmployee">Switch to Employee View</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Material ID</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.formulaInfos)
+        {
+            <tr>
+                <td>@item.p_id</td>
+                <td>@item.m_id</td>
+                <td>@item.quantity</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Product/EditFormula?p_id=@item.p_id&m_id=@item.m_id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Product/DeleteFormula?p_id=@item.p_id&m_id=@item.m_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
